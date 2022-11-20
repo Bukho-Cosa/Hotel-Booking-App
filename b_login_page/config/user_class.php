@@ -11,21 +11,23 @@ if (isset($_POST['logIn'])) {
 /************* REGISTER USER DATA ******************/
 
 if (isset($_POST['register'])) {
-    $newUsername = $_POST['username'];
-    $newFirstName = $_POST['name'];
-    $newLastName = $_POST['surname'];
-    $newPasscode = $_POST['passcode'];
-    $newEmail = $_POST['email'];
-    $newAddress = $_POST['address'];
+    $username = $_POST['username'];
+    $firstName = $_POST['name'];
+    $lastName = $_POST['surname'];
+    $password = $_POST['passcode'];
+    $email = $_POST['email'];
+    $address = $_POST['address'];
 
     //if needed
 
     $_SESSION['user'] = [
-        'username' => $newUsername,
-        'fullName' => $newFirstName. " " . $newLastName,
-        'email' => $newEmail
+        'username' => $username,
+        'fullName' => $firstName. " " . $lastName,
+        'email' => $email
     ];
 }
+
+$fullname = $firstName. " " .$lastName;
 
 class User {
 
