@@ -1,4 +1,4 @@
-<?php
+<?php 
 
 class DbConfig {
 
@@ -12,7 +12,7 @@ class DbConfig {
 
     public function connectToDatabase() {
 
-        $mysqli = new mysqli(
+        $sql = new mysqli(
             $this->user,
             $this->password,
             $this->db,
@@ -21,12 +21,12 @@ class DbConfig {
         );
 
         // Check connection
-        if ($mysqli->connect_error) {
-            die("Connection failed: " . $mysqli->connect_error);
+        if ($sql->connect_error) {
+            die("Connection failed: " . $sql->connect_error);
 
         } else {
             //echo "connected successfully";
-            return $mysqli;
+            return $sql;
         }
     }
 
