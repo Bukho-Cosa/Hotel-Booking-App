@@ -16,10 +16,11 @@ session_start();
             margin: 0;
         }
 
-        #container{
+        #container {
             width: 100%;
             border: solid;
         }
+
         #navBar {
             float: right;
             display: flex;
@@ -40,7 +41,7 @@ session_start();
             color: black;
         }
 
-        #header{
+        #header {
             margin-top: 4rem;
             padding-left: 10rem;
             padding-top: 1rem;
@@ -55,15 +56,17 @@ session_start();
             float: left;
             margin-left: 2rem;
         }
-        #header h2{
+
+        #header h2 {
             padding-top: 2rem;
             font-size: 24px;
         }
-        #header p{
+
+        #header p {
             font-size: 16px;
         }
 
-        #checkIn{
+        #checkIn {
             margin-top: 5rem;
             border: solid lightgrey;
             background-color: lightgray;
@@ -71,7 +74,6 @@ session_start();
             justify-content: center;
             text-align: center;
         }
-        
     </style>
 </head>
 
@@ -91,11 +93,13 @@ session_start();
         <p>Cozy trip provides you with safe holiday stays in all locations. Safe fun for the whole family.</p>
     </div>
     <div id="checkIn">
-        <label for="checkIn"> Check In:</label>
-        <input type="date">
+        <form action="<?= $_SERVER['PHP_SELF'] ?>" method="post">
+            <label for="checkIn"> Check In:</label>
+            <input type="date">
 
-        <label for="checkOut"> Check Out:</label>
-        <input type="date">
+            <label for="checkOut"> Check Out:</label>
+            <input type="date">
+        </form>
     </div>
 </body>
 
