@@ -21,6 +21,74 @@ class Flat{
         $this->rooms = $roomsEl;
     }
 
+    // ----------- GET AND SET ---------------
+    public function getId()
+    {
+        return $this->id;
+    }
+    public function setId($idEl)
+    {
+        $this->id = $idEl;
+
+        return $this;
+    }
+
+    public function getName()
+    {
+        return $this->name;
+    }
+    public function setName($nameEl)
+    {
+        $this->name = $nameEl;
+
+        return $this;
+    }
+
+    public function getImg()
+    {
+        return $this->img;
+    }
+    public function setImg($imgEl)
+    {
+        $this->img = $imgEl;
+
+        return $this;
+    }
+
+    public function getFeatures()
+    {
+        return $this->features;
+    }
+    public function setFeatures($featuresEl)
+    {
+        $this->features = $featuresEl;
+
+        return $this;
+    }
+
+    public function getCPN()
+    {
+        return $this->costPerNight;
+    }
+    public function setCPN($cpnEl)
+    {
+        $this->costPerNight = $cpnEl;
+
+        return $this;
+    }
+
+    public function getRooms()
+    {
+        return $this->rooms;
+    }
+    public function setRooms($roomsEl)
+    {
+        $this->rooms = $roomsEl;
+
+        return $this;
+    }
+
+
 }
 /******************** HOTELS CLASSES ***************************/
 
@@ -62,6 +130,106 @@ class Hotel{
         $numDays = abs(round($diff / 86400));
 
         return $numDays;
+    }
+
+    // ----------- GET AND SET ---------------
+    public function getId()
+    {
+        return $this->id;
+    }
+    public function setId($idEl)
+    {
+        $this->id = $idEl;
+
+        return $this;
+    }
+
+    public function getName()
+    {
+        return $this->name;
+    }
+    public function setName($nameEl)
+    {
+        $this->name = $nameEl;
+
+        return $this;
+    }
+
+    public function getImg()
+    {
+        return $this->img;
+    }
+    public function setImg($imgEl)
+    {
+        $this->img = $imgEl;
+
+        return $this;
+    }
+
+    public function getFeatures()
+    {
+        return $this->features;
+    }
+    public function setFeatures($featuresEl)
+    {
+        $this->features = $featuresEl;
+
+        return $this;
+    }
+
+    public function getCPN()
+    {
+        return $this->costPerNight;
+    }
+    public function setCPN($cpnEl)
+    {
+        $this->costPerNight = $cpnEl;
+
+        return $this;
+    }
+
+    public function getBeds()
+    {
+        return $this->beds;
+    }
+    public function setBeds($bedsEl)
+    {
+        $this->beds = $bedsEl;
+
+        return $this;
+    }
+
+    public function getRating()
+    {
+        return $this->rating;
+    }
+    public function setRatings($ratingEl)
+    {
+        $this->rating = $ratingEl;
+
+        return $this;
+    }
+
+    public function getBooked()
+    {
+        return $this->fullyBooked;
+    }
+    public function setBooked($bookedEl)
+    {
+        $this->fullyBooked = $bookedEl;
+
+        return $this;
+    }
+
+    public function getAddress()
+    {
+        return $this->address;
+    }
+    public function setAddress($addressEl)
+    {
+        $this->address = $addressEl;
+
+        return $this;
     }
 }
 

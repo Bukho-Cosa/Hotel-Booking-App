@@ -74,6 +74,34 @@ session_start();
             justify-content: center;
             text-align: center;
         }
+
+        #flats{
+            margin-top: 1rem;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        section{
+            border-radius: 1rem;
+            border: solid black;
+            padding: 0.5rem;
+        }
+
+        #flats img{
+            width: 258px;
+            height: 258px;
+        }
+
+        #hotels{
+            margin-top: 1rem;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #hotels img{
+            width: 258px;
+            height: 258px;
+        }
     </style>
 </head>
 
@@ -100,6 +128,53 @@ session_start();
             <label for="checkOut"> Check Out:</label>
             <input type="date">
         </form>
+    </div>
+    <div id="flats">
+        <h3>Flats available: </h3>
+        <section id="flat">
+            <img src="flats/pexels-anna-filyaeva-2370932.jpg" alt="flat_pexels">
+            <h4>Flats in Cape Town</h4>
+            <p>Avg. R1 950</p>
+        </section>
+        <section id="flat">
+            <img src="flats/pexels-expect-best-323780.jpg" alt="flat_pexels">
+            <h4>Flats in Gqeberha</h4>
+            <p>Avg. R1 950</p>
+        </section>
+        <section id="flat">
+            <img src="flats/pexels-max-vakhtbovych-5998117.jpg" alt="flat_pexels">
+            <h4>Flats in Johannesburg</h4>
+            <p>Avg. R1 950</p>
+        </section>
+        <section id="flat">
+            <img src="flats/pexels-tobias-bjørkli-2119714.jpg" alt="flat_pexels">
+            <h4>Flats in Port Alfred</h4>
+            <p>Avg. R1 950</p>
+        </section>
+    </div>
+
+    <div id="hotels">
+    <h3>Hotels available: </h3>
+        <section id="hotel">
+            <img src="hotels/pexels-julie-aagaard-2096983.jpg" alt="hotel_pexels">
+            <h4>Hotels in Cape Town</h4>
+            <p>Avg. R740</p>
+        </section>
+        <section id="hotel">
+            <img src="hotels/pexels-pixabay-279746.jpg" alt="hotel_pexels">
+            <h4>Hotels in Gqeberha</h4>
+            <p>Avg. R740</p>
+        </section>
+        <section id="hotel">
+            <img src="hotels/pexels-amar-saleem-70441.jpg" alt="hotel_pexels">
+            <h4>Hotels in Johannesburg</h4>
+            <p>Avg. R740</p>
+        </section>
+        <section id="hotel">
+            <img src="hotels/pexels-asad-photo-maldives-1287460.jpg" alt="hotel_pexels">
+            <h4>Hotels in Port Alfred</h4>
+            <p>Avg. R740</p>
+        </section>
     </div>
 </body>
 

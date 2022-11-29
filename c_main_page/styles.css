@@ -7,3 +7,32 @@
     width: 20px;
     height: 20px;
 }
+
+.header{
+    display: flex;
+    background-color: blueviolet; /*the only css that is working is that of the svg*/
+
+}
+
+.headerContents{
+    display: flex;
+    justify-content: space-around; /*this did nothing*/
+
+    float: right; /*also did nothing*/
+
+    padding: 1rem;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+.section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.box {
+    padding: 2rem;
+    margin: 1rem;
+    box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.2);
+}
